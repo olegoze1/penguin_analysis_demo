@@ -1,0 +1,25 @@
+---
+title: "penguin_analysis_demo"
+author: "Oleg Ozerov"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+How
+
+```{r}
+count(penguins)
+```
+
+```{r}
+penguins |>
+  ggplot(aes(x = species, y = body_mass_g, fill = species)) +
+  geom_boxplot()
+```
